@@ -5,20 +5,6 @@
   <title>Matcha Slim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Germany-only Geo Filter -->
-  <script>
-    fetch("https://ipapi.co/json/")
-      .then(res => res.json())
-      .then(data => {
-        if (data.country_code !== "DE") {
-          window.location.href = "https://google.com";
-        }
-      })
-      .catch(() => {
-        window.location.href = "https://google.com";
-      });
-  </script>
-
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
